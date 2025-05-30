@@ -3,12 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Full HD Image Viewer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* არანაირი scroll */
+      }
+
+      img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover; /* რომ ეკრანს იდეალურად მოერგოს */
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <div class="center-container">
-      <img src="./cover.png" alt="cover" class="surati" />
-    </div>
+    <img src="photo.jpg" alt="Your Image" />
   </body>
 </html>
