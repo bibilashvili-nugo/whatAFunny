@@ -1,7 +1,15 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Make image fill the screen */
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 .full-screen-img {
